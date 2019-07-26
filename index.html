@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hover Game</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        .bait:hover{
+            animation: bait 10s ease-in-out 0s 1 forwards;
+            cursor: cell;
+        }
+        @keyframes bait {
+          0%   {top:  15%; left: 0%;}
+          100% {top:  85%; left: 100%;}
+        }
+    </style>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="pconly">
+        <h1>Computer only 💻</h1>
+    </div>
+
+    <label for="HideBubbles" class="right">Bubbles ausblenden:__</label>
+    <input type="checkbox" name="HideBubbles" class="bubblehide right" id="HideBubbles">
+
+    <canvas></canvas>
+
+    <div class="top">
+        <nav>
+            <h1>Hover Game</h1>
+        </nav>
+
+        <div class="catch">
+            <div class="bait"></div>
+
+            <input type="checkbox" name="Ziel" id="Ziel" class="Ziel">
+
+            <p class="text">
+                Verfolge den roten Ball (oben links) mit der Maus bis zu dem Kasten unten rechts und klicke ihn dann an. <br><span class="warning">⚠</span><br> Nur mit Maus spielbar. Nicht mit Toutchscreen eingaben kompatiebel.
+            </p>
+
+            <div class="popup">
+                <h1>Ziel!!!</h1>
+                <a href="/lvl1.html" class="btn-extend">Next</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="animation.js"></script>
+</body>
+</html>

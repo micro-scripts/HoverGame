@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hover Game</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        .bait:hover{
+            animation: bait 20s ease-in-out 0s 1 forwards;
+            cursor: cell;
+        }
+        @keyframes bait {
+            0%   {top:  15%; left: 0%;}
+            25%  {top:  80%; left: 20%;}
+            50%  {top:  30%; left: 40%;}
+            75%  {top:  20%; left: 10%;}
+            100% {top:  85%; left: 100%;}
+        }
+    </style>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="pconly">
+        <h1>Computer only 💻</h1>
+    </div>
+
+    <label for="HideBubbles" class="right">Bubbles ausblenden:__</label>
+    <input type="checkbox" name="HideBubbles" class="bubblehide right" id="HideBubbles">
+
+    <canvas></canvas>
+
+    <div class="top">
+        <nav>
+            <h1>Level <strong>2</strong></h1>
+        </nav>
+
+        <div class="catch">
+            <div class="bait"></div>
+
+            <input type="checkbox" name="Ziel" id="Ziel" class="Ziel">
+
+            <div class="popup">
+                <h1>Ziel!!!</h1>
+                <a href="/lvl3.html" class="btn-extend">Next</a>
+            </div>
+        </div>
+    </div>
+    <script src="animation.js"></script>
+</body>
+</html>
