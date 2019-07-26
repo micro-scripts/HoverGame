@@ -157,7 +157,7 @@ nav h1{color: white;text-align: center;font-size: 7vh;margin: 3vh}
 }
 .Ziel:hover{display: inherit}
 .bait:hover ~ .Ziel{display: inherit;}
-.bait:hover ~ .text{opacity: 0;top:-50%;}
+.bait:hover ~ .text{opacity: 0;top:-1000%;}
 
 .popup{
     padding: 10vh 20vh;
